@@ -31,6 +31,18 @@ export class FrutaComponent{
     	this.cambiarNombre();
     	this.cambiarEdad(30);
     	console.log(this.nombre + " " + this.edad);    	
+
+    	//Variables y alcance
+    	var uno = 8;
+    	var dos = 15;
+
+    	if(uno === 8){
+    		let uno = 3; //let alcance solo dentro del bloque del codigo en este caso dentro del if
+    		var dos = 88; //var alcance en toda la clase
+
+    		console.log("Dentro del if "+uno+" "+dos);
+    	}
+    	console.log("Fuera del if "+uno+" "+dos);
     }
 
     cambiarNombre(nombre){
