@@ -8,10 +8,35 @@ export class FrutaComponent{
 	public nombre_componente = 'Componente de fruta';
 	public listado_frutas = 'Naranja, Manzana, Pera y Sandia';
 
-	public nombre:string = 'Alex';
-	public edad:number = 29;
-    public mayorDeEdad:boolean = true;
-    public trabajos:Array<string> = ['Carpintero','Albañil','Fontanero'];
-    public trabajos_any:Array<any> = ['Carpintero',44,'Fontanero'];
-    comodin:any = "Cualquier cosa";
+	public nombre:string;
+	public edad:number;
+    public mayorDeEdad:boolean;
+    public trabajos:Array<string>;
+    public trabajos_any:Array<any>;
+    comodin:any;
+
+    constructor(){
+		this.nombre = 'Alex';
+		this.edad = 29;
+	    this.mayorDeEdad = true;
+	    this.trabajos = ['Carpintero','Albañil','Fontanero'];
+	    this.trabajos_any = ['Carpintero',44,'Fontanero'];
+	    this.comodin = "Cualquier cosa";
+    }
+
+    ngOnInit(){
+    	console.log(this.trabajos);
+    	console.log(this.trabajos_any);
+    	console.log(this.comodin);
+    	this.cambiarNombre();
+    	this.cambiarEdad(30);
+    	console.log(this.nombre + " " + this.edad);    	
+    }
+
+    cambiarNombre(nombre){
+    	this.nombre = 'Alex Cardona';
+    }
+    cambiarEdad(edad){
+    	this.edad = edad;
+    }    
 }
