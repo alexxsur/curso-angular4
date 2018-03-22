@@ -28,7 +28,7 @@ export class FrutaComponent{
     	console.log(this.trabajos);
     	console.log(this.trabajos_any);
     	console.log(this.comodin);
-    	this.cambiarNombre();
+    	this.cambiarNombre("Alexander Cardona");
     	this.cambiarEdad(30);
     	console.log(this.nombre + " " + this.edad);    	
 
