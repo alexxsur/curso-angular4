@@ -4,7 +4,7 @@
 <h3>Selector de Colores</h3>
 <button (click)="logColorSeleccionado()">MOSTRAR LOG</button>
 <input type="text" [(ngModel)]="color_seleccionado">
-<pre>
+<pre [style.border]="color_seleccionado == 'red' ? '5px solid black' : '1px solid green'">
 	<strong>Color elegido:</strong>
 	{{color_seleccionado}}
 </pre>
