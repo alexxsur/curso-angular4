@@ -1,8 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div>
-  <h2>
+  <h3>
     {{ title }}!
-  </h2>
+  </h3>
+  <hr>
+  <nav>
+    <a [routerLink]="['/pagina-principal']">Home</a>-
+    <a [routerLink]="['/fruta']">Fruta</a>-
+    <a [routerLink]="['/empleado']">Empleado</a>- 
+    <a [routerLink]="['/contacto']">Contacto</a>    
+  </nav>  
+  <hr>
   <!-- <fruta></fruta> -->
   <!-- <empleado></empleado> -->
   <router-outlet></router-outlet>
