@@ -12,6 +12,7 @@ export class HomeComponent{
     public listado_ropa:Array<string>;
     public prenda_a_guardar:string;
     public fecha;
+    public nombre = "JUAN lopez MarTinez";
 
     constructor(
         private _ropaService: RopaService
