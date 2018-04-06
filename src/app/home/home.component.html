@@ -1,5 +1,9 @@
 <h2> {{ titulo }} </h2>
 <br>
+{{fecha|date:'dd/MM/yyyy'}}
+<br>
+{{fecha|date:'fullDate'}}
+<br><br>
 <input type="text" [(ngModel)]="prenda_a_guardar"> 
 <button (click)="guardarPrenda()">Añadir prenda</button>
 <p>La prenda aguardar es: <strong>{{prenda_a_guardar}}</strong></p>
