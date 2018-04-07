@@ -20,7 +20,7 @@
         <input type="text" name="color" #color="ngModel" [(ngModel)]="coche.color" 
         required pattern="[a-zA-Z#]+">        
         <span *ngIf="color.touched && !color.valid">
-                El caballaje del coche es incorrecto!!!
+                El color del coche es incorrecto!!!
         </span>
     </p>
     <input type="submit" value="Guardar" [disabled]="!formCoche.form.valid">
