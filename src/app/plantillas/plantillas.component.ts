@@ -7,6 +7,14 @@ import {Component} from '@angular/core';
 export class PlantillasComponent{
     public titulo;
     public administrador;
+
+    public dato_externo = "Alex";
+    public identity = {
+        id: 1,
+        web: 'youtube.com',
+        tematica: 'Desarrollo web'
+    }
+
     constructor(){
       this.titulo = "Plantilas ngTemplate en Angular";
       this.administrador = true;
