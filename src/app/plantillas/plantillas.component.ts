@@ -23,4 +23,10 @@ export class PlantillasComponent{
     cambiar(value){
         this.administrador = value;
     }
+
+    public datos_del_hijo;
+    recibirDatos(event){
+        console.log(event);
+        this.datos_del_hijo = event;
+    }
 }
